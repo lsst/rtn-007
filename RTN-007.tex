@@ -1,4 +1,4 @@
-\documentclass[DM,authoryear,toc]{lsstdoc}
+\documentclass[OPS,authoryear,toc]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
 \input{meta}
 
@@ -36,6 +36,7 @@ This document provides the charge to the Rubin Observatory Legacy Survey of Spac
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
   \addtohist{0.1}{2020-09-29}{Initial draft.}{Leanne Guy}
+  \addtohist{0.2}{2020-10-06}{Feedback from Lynne Jones}{Leanne Guy}
 }
 
 \begin{document}
@@ -55,17 +56,18 @@ The Survey Evaluation Working Group (SEWG), a Rubin Operations internal group le
 
  %%%%% Scope
 \section{Scope}
-The SEWG is charged with evaluating the current and expected performance of the survey, as presented to them by the Survey Scheduling team, and making recommendations to the Director on any needed tactical changes to the survey cadence (e.g., due to the impact of weather, telescope or data processing responses to the schedule, etc),  to ensure the survey remains on track to achieve its 10-year science goals.  
+The SEWG is charged with evaluating the current and expected performance of the survey, as presented to them by the Survey Scheduling team. 
+The SEWG will make recommendations to the Director of Operations on any needed tactical changes to the survey cadence (e.g., due to the impact of weather, telescope or data processing responses to the schedule, etc),  to ensure the survey remains on track to achieve its 10-year science goals. 
+The SEWG will present the expected performance of the survey and scheduler to the Survey Cadence Optimization Committee (SCOC), a community-based sub-committee of the Science Advisory Committee (SAC) led  by the Rubin Observatory Head of Science. 
 
 %%%%% Responsibilities 
 \section{Responsibilities}
-The SWEG has the following responsibilities: 
+The SEWG has the following responsibilities: 
 \begin{itemize}
 \item Evaluate the survey and scheduler performance.
 \item Produce survey and scheduler performance reports on a quarterly basis.
-\item Report to the Survey Cadence Optimization Committee (SCOC).
-\item Ingest feedback from the SCOC.
-\item Recommend tactical changes in the scheduling to the director of operations. 
+\item Ensure the survey remains on track to achieve the 10-yr science goals. 
+\item Interface with the SCOC for what concerns the performance of the survey and scheduler.
 \end{itemize}
 
  
@@ -75,62 +77,74 @@ The SWEG has the following responsibilities:
 \subsection{Evaluate the survey and scheduler performance}
 The SEWG will evaluate quarterly the current and expected performance of the survey and scheduler based on analysis from the Survey Scheduling Team.
 Achieving this goal will involve simulating the remaining survey time; folding in an evolving understanding of the Observatory system and ascertaining whether a change to the Scheduling algorithm or configuration may be warranted. 
+Simulations will be carried out by the Survey Scheduling Team in the System Performance department. 
+Metrics to evaluate the survey performance will include both observing efficiency and science return. 
 
 \subsection{Produce quarterly performance reports}
-Produce quarterly reports detailing the current and expected performance of the survey and scheduler for presentation to the director of Rubin operations and the SCOC. 
+Produce quarterly reports detailing the current and expected performance of the survey and scheduler for presentation to the Director of Rubin operations and the SCOC. 
+All survey data and simulations used as input to the performance analysis and report will be made available with the report. 
 Optionally, suggestions or recommendations for changes for can be included. 
 
-\subsection{Report to the Survey Cadence Optimization Committee (SCOC)}
-The SEWG will present the expected performance of the survey and scheduler to the SCOC,  a community-based sub-committee of the Science Advisory Committee (SAC). 
-The SCOC will convene twice a year to evaluate the performance of the survey with respect to the science priorities of the community and to advise the Director on strategic decisions related to survey design and overall survey cadence (e.g., due to  yearly weather trends, changes to the community's science priorities, etc).
-The SEWG will ingest feedback from the SCOC.
-
-
 \subsection{Recommend tactical changes in the scheduling}
-Based on the  survey and scheduler performance, the SEWG will recommend tactical changes in the scheduling to the director of Rubin operations to ensure the survey remains on track to achieve the 10-yr science goals.
+Based on the  survey and scheduler performance, the SEWG will recommend tactical changes in the scheduling to the Director of Rubin operations to ensure the survey remains on track to achieve the 10-yr science goals.
 In addition to meeting basic survey requirements, the SEWG should consider how to maximize the breadth of science that can be done with LSST by making minor changes to the observing strategy. 
 
+\subsection{Report to the Survey Cadence Optimization Committee (SCOC)}
+The lead scheduler scientist, as chair of the SEWG, will report on behalf of the SEWG to the SCOC, presenting the expected performance of the survey and scheduler.
+The SCOC will convene twice a year to evaluate the performance of the survey, as presented by the SEWG, with respect to the science priorities of the community, and advise the Director on strategic decisions related to survey design and overall survey cadence (e.g., due to  yearly weather trends, changes to the community's science priorities, etc.).
+
+\subsection{Ingest feedback from the SCOC}
+The SEWG will  ingest feedback from the SCOC and evaluate the implications for the scheduler and overall impact of making any change versus retaining the current cadence. Where feasible and necessary, the SEWG will request the Survey Scheduling team to produce the simulations necessary to inform SCOC decisions. 
+
+\subsection{Support the community via the SCOC with simulations of new proposed cadences}
+Community ideas for novel cadences and the science that they will enable should be presented to the SCOC. 
+The SEWG, where directed to by the SCOC, will support the community in evaluating the potential of new proposed cadences and the impact on the the current cadence and overall science goals of LSST through simulations. 
 
 %%%%% Roles 
 \section{Roles and Membership}
-
 The SEWG is led by the System Performance department and includes representation from the Observatory Operations and Data Production departments. 
-Given that the SEWG will endure  throughout the full 10-year survey,  the specific membership may change however the roles are not expected change. 
+Given that the SEWG will endure throughout the full 10-year survey,  the specific membership may change however the roles are not expected change significantly. 
 For this reason, we list here the roles to be fulfilled together with the current incumbent. 
 
 \begin{itemize}
 \item {
-Lead Scheduling Scientist (chair)  
-\newline{Incumbent:} Lynne Jones
+{\bf Lead Scheduling Scientist (chair)}
+\newline{\it Description:} 
+Leads the Survey Scheduling Team, and the Survey Evaluation Working Group. Oversees survey monitoring and investigation of its optimization, and reports to the community on survey progress and performance. 
+\newline{\it Incumbent:} Lynne Jones
 }
 \item{
-Lead Observing Specialist
-\newline{Incumbent:} 
+{\bf Lead Observing Specialist.}
+\newline{\it Description:} Responsible for nighttime operation of the telescopes,   prompt assessment of environmental conditions and image quality.  
+\newline{\it Incumbent:} 
 }
 \item{
-Observatory Support Scientist
-\newline{Incumbent:}
+{\bf Observatory Support Scientist}
+\newline{\it Description:} Responsible for scheduler interaction with atmospheric characterization equipment, hardware telemetry, and interaction with the observing history/EFD/scheduler inputs. Manages scheduler functionality and behaviour on summit, e.g. open/close times, moon avoidance, airmass limitations, when to switch to calibrations/engineering activities, etc.. Responsible for producing a quarterly report on the scheduled/expected observations versus the performed observations.  
+\newline{\it Incumbent:}
 }
 \item{
-Algorithms and Pipelines Lead (or delegate)
-\newline{Incumbent:} 
+{\bf Algorithms and Pipelines Lead (or delegate)}
+\newline{\it Description:} Responsible for the leadership and coordination of the Algorithms and Pipelines Team, the scientific integrity of Alert Production and Data Releases, and interaction and coordination with the Lead Community Scientist, Lead Scheduler Scientist, and the Lead Production Scientist. 
+\newline{\it Incumbent:} 
 }
 \item{
-Data Release Pipeline Lead (or delegate)
-\newline{Incumbent:} 
+{\bf Data Release Pipeline Lead (or delegate)}
+\newline{\it Description:} Product owner for the data release processing pipelines,  oversees the day-to-day work of the Data Release Pipeline Scientists and recommends changes to Data Release Production Pipelines.
+\newline{\it Incumbent:} 
 }
 \item{
-Alert Production Lead (or delgate)
-\newline{Incumbent:} 
+{\bf Alert Production Lead (or delgate)}
+\newline {\it Description:} Product owner for the  prompt processing pipelines, oversees the day-to-day work of the Alert Production Pipeline Scientists and recommends changes to Alert Production Pipelines.
+\newline{\it Incumbent:} 
 }
 \end{itemize}
 
 % Reporting 
 \section{Schedule and Reporting}
-
-The SEWG will be convened starting FY21 as a part of the pre-operations activity and will continue through the duration of the full 10-year survey.  
-During the pre-operations period, the proto-SEWG may not necessarily meet or report on the same cadence as    during the operations era. 
-The SEWG chair shall report directly to the AD for System Performance and the Director for Operations. 
+The SEWG will be convened starting FY21 as a part of the pre-operations activity and will continue through the full duration of the 10-year survey.  
+During the pre-operations period, the proto-SEWG may not necessarily meet or report on the same cadence as  during the operations era. 
+The SEWG chair shall report directly to the AD for System Performance and the Director for Operations.  
 
 
 \appendix
